@@ -5,7 +5,7 @@ const StepCard = ({ step }) => {
   return (
     <div className="border-2 border-gray-200 rounded-lg p-6  max-w-80 h-80 shadow bg-white hover:shadow-lg transition-shadow duration-300">
       <div className="flex justify-end">
-        <div className="bg-primary text-white py-2 px-2.75 rounded-full w-fit">
+        <div className="bg-blue-500 text-white py-2 px-2.75 rounded-full w-fit">
           {step.id}
         </div>
       </div>

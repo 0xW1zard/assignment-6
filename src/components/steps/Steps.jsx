@@ -10,7 +10,7 @@ const Steps = () => {
         <p className="text-[#627382] mt-2.5">
           Start using premium digital tools in minutes, not hours.
         </p>
-        <div className="flex gap-5 justify-center mt-12">
+        <div className="flex gap-5 flex-wrap justify-center mt-12">
           {Stepdata.map((step) => (
             <StepCard key={step.id} step={step} />
           ))}

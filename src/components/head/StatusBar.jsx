@@ -2,7 +2,7 @@ import React from "react";
 
 const StatusBar = () => {
   return (
-    <div className="bg-primary text-white">
+    <div className="bg-blue-500 text-white">
       <div className=" p-10 mx-auto flex justify-evenly mt-10 ">
         <div className=" flex flex-col justify-center gap-1 text-center">
           <h2 className="text-4xl font-bold">50K+</h2>
