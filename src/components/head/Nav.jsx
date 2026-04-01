@@ -1,5 +1,5 @@
 import React from "react";
-import menu from "../../assets/menu.json";
+import menu from "../../assets/JSON/menu.json";
 
 const Nav = () => {
   return (
@@ -36,7 +36,7 @@ const Nav = () => {
         <a className="text-2xl font-bold">daisyUI</a>
       </div>
       <div className="hidden lg:flex navbar-center">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal space-x-2">
           {menu.map((item, index) => (
             <li key={index}>
               <a className="font-medium">{item.label}</a>
