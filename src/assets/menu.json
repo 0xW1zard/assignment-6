@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "label": "Products",
+      "link": "/products"
+    },
+    {
+      "id": 2,
+      "label": "Features",
+      "link": "/features"
+    },
+    {
+      "id": 3,
+      "label": "Pricing",
+      "link": "/pricing"
+    },
+    {
+      "id": 4,
+      "label": "Testimonials",
+      "link": "/testimonials"
+    },
+    {
+      "id": 5,
+      "label": "FAQ",
+      "link": "/faq"
+    }
+  ]
