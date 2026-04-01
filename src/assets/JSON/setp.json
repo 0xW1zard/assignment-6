@@ -1,0 +1,26 @@
+[
+    {
+      "id": "01",
+      "icon": "User",
+      "title": "Create Account",
+      "description": "Sign up for free in seconds. No credit card required to get started.",
+      "bgColor": "bg-purple-100",
+      "iconColor": "text-purple-600"
+    },
+    {
+      "id": "02",
+      "icon": "Package",
+      "title": "Choose Products",
+      "description": "Browse our catalog and select the tools that fit your needs.",
+      "bgColor": "bg-purple-100",
+      "iconColor": "text-purple-600"
+    },
+    {
+      "id": "03",
+      "icon": "Rocket",
+      "title": "Start Creating",
+      "description": "Download and start using your premium tools immediately.",
+      "bgColor": "bg-purple-100",
+      "iconColor": "text-purple-600"
+    }
+  ]
