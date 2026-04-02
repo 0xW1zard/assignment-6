@@ -18,18 +18,27 @@ const pricingData = fetch("/public/Json/pricing.json").then((response) =>
 
 function App() {
   
+  const [cartItems, setCartItems] = useState([]);
+
+  const handleAddToCart = (productToAdd) => {
+    const isAlreadyInCart = cartItems.find(
+      (item) => item.id === productToAdd.id,
+    );
+    if (!isAlreadyInCart) {
+      setCartItems([...cartItems, productToAdd]);
+    }
+  };
   
 
   return (
     <>
-      <Nav></Nav>
-      <div className="divider -mt-1"></div>
+      <Nav cartItems={cartItems}></Nav>
       <Hero></Hero>
       <StatusBar />
       <Suspense
         fallback={<span className="loading loading-spinner loading-xl"></span>}
       >
-        <Toolblock toolData={toolData}></Toolblock>
+        <Toolblock  toolData={toolData} cartItems={cartItems} setCartItems={setCartItems} handleAddToCart={handleAddToCart}></Toolblock>
       </Suspense>
       <Steps></Steps>
       <Suspense

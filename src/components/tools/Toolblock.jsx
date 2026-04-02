@@ -3,7 +3,7 @@ import { use } from "react";
 import Cart from "./Cart";
 import Products from "./Products";
 
-const Toolblock = ({ toolData }) => {
+const Toolblock = ({ toolData, cartItems, handleAddToCart, setCartItems }) => {
   const data = use(toolData);
 
   const [currentTab, setCurrentTab] = useState("Product");
@@ -27,7 +27,7 @@ const Toolblock = ({ toolData }) => {
             className={`btn ${currentTab === "Cart" ? "btn-primary" : ""} rounded-full`}
             onClick={() => setCurrentTab("Cart")}
           >
-            Cart(2)
+            Cart({cartItems.length})
           </button>
         </div>
         <div className="mt-10">
@@ -37,16 +37,15 @@ const Toolblock = ({ toolData }) => {
                 <Products
                   key={item.id}
                   item={item}
-                  currentTab={currentTab}
-                  setCurrentTab={setCurrentTab}
+                  handleAddToCart={handleAddToCart}
                 />
               ))}
             </div>
           ) : (
             <div>
               <Cart
-                currentTab={currentTab}
-                setCurrentTab={setCurrentTab}
+                cartItems={cartItems}
+                setCartItems={setCartItems} 
               ></Cart>
             </div>
           )}

@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Features from "../pricing/Features.jsx";
 
-const Products = ({ item, currentTab, setCurrentTab }) => {
-  console.log(item);
+
+
+const Products = ({ item, handleAddToCart }) => {
+
+  const [isAdded, setIsAdded] = useState(false);
 
   const { imageUrl, badge, title, description, price, billingCycle } = item;
+
+  const productBuy = () => {
+    setIsAdded(true);
+    handleAddToCart(item);
+  };
   return (
     <div className="border border-gray-300 rounded-lg text-left p-6 space-y-5 h-full flex flex-col">
       <div className="flex justify-end">
@@ -38,7 +46,12 @@ const Products = ({ item, currentTab, setCurrentTab }) => {
           <Features key={index} feature={feature} />
         ))}
       </ul>
-      <button className="btn btn-primary w-full rounded-full">Buy Now</button>
+      <button
+        className={`btn w-full rounded-full ${isAdded ? "btn-success text-white" : "btn-primary"}`}
+        onClick={productBuy} 
+      >
+        {isAdded ? "Added to Cart" : "Buy Now"}
+      </button>
     </div>
   );
 };
