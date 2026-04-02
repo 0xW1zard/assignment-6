@@ -33,7 +33,7 @@ const Nav = () => {
             ))}
           </ul>
         </div>
-        <a className="text-2xl font-bold">daisyUI</a>
+        <a className="text-3xl font-bold text-blue-500">DigiTool</a>
       </div>
       <div className="hidden lg:flex navbar-center">
         <ul className="menu menu-horizontal space-x-2">

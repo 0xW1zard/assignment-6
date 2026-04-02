@@ -4,7 +4,6 @@ import PricingCard from './PricingCard';
 const PricingBlock = ({ pricingData }) => {
 
     const data = use(pricingData);
-    console.log(data);
     return (
         <div className='my-20 container mx-auto '>
             <div className='w-fit mx-auto text-center space-y-3 px-3'>
