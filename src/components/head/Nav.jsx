@@ -67,8 +67,8 @@ const Nav = ({ cartItems }) => {
           </div>
         </div>
 
-        <a className="btn btn-ghost">Login</a>
-        <button className="btn btn-primary">Get Started</button>
+        <a className="btn btn-ghost hidden sm:flex">Login</a>
+        <button className="btn btn-primary ">Get Started</button>
       </div>
     </div>
     </div>
