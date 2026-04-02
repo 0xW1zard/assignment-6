@@ -10,10 +10,10 @@ import Footer from "./components/footer/Footer";
 import Toolblock from "./components/tools/Toolblock";
 import { ToastContainer } from "react-toastify";
 
-const pricingData = fetch("/public/Json/pricing.json").then((response) =>
+const pricingData = fetch("/Json/pricing.json").then((response) =>
   response.json(),
 );
-const toolData = fetch("/public/Json/tools.json").then((response) =>
+const toolData = fetch("/Json/tools.json").then((response) =>
   response.json(),
 );
 

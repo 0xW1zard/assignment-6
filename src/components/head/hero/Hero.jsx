@@ -1,7 +1,7 @@
 import { Play } from "lucide-react";
 import React from "react";
-import badge from "../../../assets/img/badge.png";
-import heroImg from "../../../assets/img/banner.png";
+import badge from "/img/badge.png";
+import heroImg from "/img/banner.png";
 
 
 const Hero = () => {

@@ -9,7 +9,7 @@ const Toolblock = ({ toolData, cartItems, handleAddToCart, setCartItems }) => {
   const [currentTab, setCurrentTab] = useState("Product");
 
   return (
-    <div className="container mx-auto text-center my-20">
+    <div className="container mx-auto text-center my-20 px-3">
       <div className="space-y-4">
         <h2 className="text-5xl font-bold">Premium Digital Tools</h2>
         <p className="text-[#627382]">
@@ -32,7 +32,7 @@ const Toolblock = ({ toolData, cartItems, handleAddToCart, setCartItems }) => {
         </div>
         <div className="mt-10">
           {currentTab === "Product" ? (
-            <div className="grid grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {data.map((item) => (
                 <Products
                   key={item.id}

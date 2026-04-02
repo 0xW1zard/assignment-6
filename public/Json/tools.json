@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "imageUrl": "./src/assets/img/products/writing_2327400 1.png",
+      "imageUrl": "/img/products/writing_2327400 1.png",
       "badge": "Best Seller",
       "title": "AI Writing Pro",
       "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
@@ -16,7 +16,7 @@
     },
     {
       "id": 2,
-      "imageUrl": "./src/assets/img/products/design-tool.png",
+      "imageUrl": "/img/products/design-tool.png",
       "badge": "Popular",
       "title": "Design Templates Pack",
       "description": "2000+ premium templates for social media, presentations, and marketing materials.",
@@ -31,7 +31,7 @@
     },
     {
       "id": 3,
-      "imageUrl": "./src/assets/img/products/camera.png",
+      "imageUrl": "/img/products/camera.png",
       "badge": "New",
       "title": "Premium Stock Assets",
       "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
@@ -46,7 +46,7 @@
     },
     {
       "id": 4,
-      "imageUrl": "./src/assets/img/products/operation.png",
+      "imageUrl": "/img/products/operation.png",
       "badge": "Popular",
       "title": "Automation Toolkit",
       "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
@@ -61,7 +61,7 @@
     },
     {
       "id": 5,
-      "imageUrl": "./src/assets/img/products/portfolio.png",
+      "imageUrl": "/img/products/portfolio.png",
       "badge": "New",
       "title": "Resume Builder Pro",
       "description": "Create professional resumes and cover letters that land interviews.",
@@ -76,7 +76,7 @@
     },
     {
       "id": 6,
-      "imageUrl": "./src/assets/img/products/social-media.png",
+      "imageUrl": "/img/products/social-media.png",
       "badge": "Best Seller",
       "title": "Social Media Content Kit",
       "description": "Complete toolkit for creating engaging social media content across all platforms.",

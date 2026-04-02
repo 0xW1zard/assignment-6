@@ -22,7 +22,7 @@ const Cart = ({ cartItems, setCartItems, setCurrentTab }) => {
   return (
     <div>
       {cartItems.length === 0 ? (
-        <div className="border border-gray-200 rounded-2xl p-10 flex flex-col items-center justify-center space-y-5 text-center min-h-100">
+        <div className="border border-gray-200 rounded-lg p-10 flex flex-col items-center justify-center space-y-5 text-center min-h-100">
           <div className="bg-gray-100 p-6 rounded-full text-gray-400 mb-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
