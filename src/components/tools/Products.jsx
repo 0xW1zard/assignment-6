@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Features from "../pricing/Features.jsx";
+import { toast } from "react-toastify";
 
 
 
@@ -12,6 +13,7 @@ const Products = ({ item, handleAddToCart }) => {
   const productBuy = () => {
     setIsAdded(true);
     handleAddToCart(item);
+    toast.success("Product added to cart!")
   };
   return (
     <div className="border border-gray-300 rounded-lg text-left p-6 space-y-5 h-full flex flex-col">

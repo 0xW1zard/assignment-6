@@ -8,16 +8,16 @@ import Steps from "./components/steps/Steps";
 import Workflow from "./components/workflow/Workflow";
 import Footer from "./components/footer/Footer";
 import Toolblock from "./components/tools/Toolblock";
+import { ToastContainer } from "react-toastify";
 
 const pricingData = fetch("/public/Json/pricing.json").then((response) =>
   response.json(),
 );
- const toolData = fetch("/public/Json/tools.json").then((response) =>
+const toolData = fetch("/public/Json/tools.json").then((response) =>
   response.json(),
 );
 
 function App() {
-  
   const [cartItems, setCartItems] = useState([]);
 
   const handleAddToCart = (productToAdd) => {
@@ -28,7 +28,6 @@ function App() {
       setCartItems([...cartItems, productToAdd]);
     }
   };
-  
 
   return (
     <>
@@ -38,7 +37,12 @@ function App() {
       <Suspense
         fallback={<span className="loading loading-spinner loading-xl"></span>}
       >
-        <Toolblock  toolData={toolData} cartItems={cartItems} setCartItems={setCartItems} handleAddToCart={handleAddToCart}></Toolblock>
+        <Toolblock
+          toolData={toolData}
+          cartItems={cartItems}
+          setCartItems={setCartItems}
+          handleAddToCart={handleAddToCart}
+        ></Toolblock>
       </Suspense>
       <Steps></Steps>
       <Suspense
@@ -49,6 +53,7 @@ function App() {
 
       <Workflow></Workflow>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </>
   );
 }

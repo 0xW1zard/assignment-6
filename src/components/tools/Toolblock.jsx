@@ -10,7 +10,7 @@ const Toolblock = ({ toolData, cartItems, handleAddToCart, setCartItems }) => {
 
   return (
     <div className="container mx-auto text-center my-20">
-      <div>
+      <div className="space-y-4">
         <h2 className="text-5xl font-bold">Premium Digital Tools</h2>
         <p className="text-[#627382]">
           Choose from our curated collection of premium digital products
@@ -46,6 +46,7 @@ const Toolblock = ({ toolData, cartItems, handleAddToCart, setCartItems }) => {
               <Cart
                 cartItems={cartItems}
                 setCartItems={setCartItems} 
+                setCurrentTab={setCurrentTab}
               ></Cart>
             </div>
           )}
